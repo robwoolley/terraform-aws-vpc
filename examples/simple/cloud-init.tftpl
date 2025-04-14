@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: ${username}
+    gecos: ${username}
+    lock_passwd: false
+    passwd: ${password}
+    groups: admin
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
